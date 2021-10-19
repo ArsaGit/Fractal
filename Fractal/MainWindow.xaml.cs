@@ -53,7 +53,6 @@ namespace Fractal
 					}
 				}
 			}
-			else depth++;
 		}
 
 		public void DrawSquare(double x0, double y0, double length, SolidColorBrush color)
