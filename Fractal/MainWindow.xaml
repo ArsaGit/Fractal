@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Fractal"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1000" Width="1000" x:Name="M_Window">
+        Title="MainWindow" Height="950" Width="920" x:Name="M_Window">
 	<Canvas x:Name="canvas1">
 	</Canvas>
 </Window>
