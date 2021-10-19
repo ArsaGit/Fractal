@@ -21,13 +21,20 @@ namespace Fractal
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		private const string Source = "0.5,0.5,3.5";
+		private int depth;
+
 		public MainWindow()
-		{	
+		{
+			//Fractal_2D();
 			InitializeComponent();
-			
+		}
+
+		public void Fractal_2D()
+		{
 			double x0 = 50;
 			double y0 = 50;
-			DrawFractal(x0, y0, 800, 7);
+			DrawFractal(x0, y0, 800, depth);
 		}
 
 		public void DrawFractal(double x0, double y0, double length, int depth)
@@ -64,6 +71,24 @@ namespace Fractal
 			Canvas.SetLeft(square, x0);
 			Canvas.SetTop(square, y0);
 			canvas1.Children.Add(square);
+		}
+
+		private void depthComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			Label label = depthComboBox.SelectedItem as Label;
+
+			int newDepth = int.Parse(label.Content.ToString());
+
+			if (newDepth == depth) return;
+
+			depth = newDepth;
+
+			Fractal_2D();
+		}
+
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			depthComboBox.SelectedIndex = 2;
 		}
 	}
 }
