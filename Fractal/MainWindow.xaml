@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Fractal"
         mc:Ignorable="d"
 		Loaded="Window_Loaded"
-        Title="Sierpiński carpet/Ковёр Серпинского" Height="950" Width="920" x:Name="M_Window">
+        Title="Sierpiński carpet/Ковёр Серпинского" Height="800" Width="770" x:Name="M_Window">
 	<Canvas x:Name="canvas1">
 		<StackPanel Orientation="Horizontal">
 			<Label Content="Depth:"/>
@@ -19,6 +19,8 @@
 				<Label Content="4"/>
 				<Label Content="5"/>
 				<Label Content="6"/>
+				<Label Content="7"/>
+				<Label Content="8"/>
 			</ComboBox>
 		</StackPanel>
 	</Canvas>

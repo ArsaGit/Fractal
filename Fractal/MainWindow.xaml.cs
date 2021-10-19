@@ -32,9 +32,9 @@ namespace Fractal
 
 		public void Fractal_2D()
 		{
-			double x0 = 50;
-			double y0 = 50;
-			DrawFractal(x0, y0, 800, depth);
+			double x0 = 25;
+			double y0 = 25;
+			DrawFractal(x0, y0, 700, depth);
 		}
 
 		public void DrawFractal(double x0, double y0, double length, int depth)
